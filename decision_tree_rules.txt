@@ -1,0 +1,133 @@
+|--- char_freq_$ <= 0.03
+|   |--- word_freq_over <= 0.06
+|   |   |--- char_freq_! <= 0.39
+|   |   |   |--- word_freq_addresses <= 0.02
+|   |   |   |   |--- word_freq_you <= 0.42
+|   |   |   |   |   |--- word_freq_your <= 0.16
+|   |   |   |   |   |   |--- capital_run_length_average <= 21.19
+|   |   |   |   |   |   |   |--- word_freq_000 <= 1.16
+|   |   |   |   |   |   |   |   |--- word_freq_george <= 6.55
+|   |   |   |   |   |   |   |   |   |--- word_freq_credit <= 1.46
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- word_freq_credit >  1.46
+|   |   |   |   |   |   |   |   |   |   |--- word_freq_remove <= 0.09
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- word_freq_remove >  0.09
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- word_freq_george >  6.55
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- word_freq_000 >  1.16
+|   |   |   |   |   |   |   |   |--- capital_run_length_longest <= 9.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- capital_run_length_longest >  9.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- capital_run_length_average >  21.19
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- word_freq_your >  0.16
+|   |   |   |   |   |   |--- word_freq_conference <= 0.02
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- word_freq_conference >  0.02
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- word_freq_you >  0.42
+|   |   |   |   |   |--- word_freq_original <= 0.34
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- word_freq_original >  0.34
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- word_freq_addresses >  0.02
+|   |   |   |   |--- word_freq_credit <= 1.28
+|   |   |   |   |   |--- word_freq_addresses <= 0.05
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- word_freq_addresses >  0.05
+|   |   |   |   |   |   |--- word_freq_technology <= 0.07
+|   |   |   |   |   |   |   |--- capital_run_length_average <= 1.59
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- capital_run_length_average >  1.59
+|   |   |   |   |   |   |   |   |--- word_freq_project <= 0.13
+|   |   |   |   |   |   |   |   |   |--- word_freq_business <= 0.28
+|   |   |   |   |   |   |   |   |   |   |--- word_freq_money <= 0.08
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- word_freq_money >  0.08
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- word_freq_business >  0.28
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- word_freq_project >  0.13
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- word_freq_technology >  0.07
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- word_freq_credit >  1.28
+|   |   |   |   |   |--- word_freq_3d <= 0.64
+|   |   |   |   |   |   |--- word_freq_free <= 0.14
+|   |   |   |   |   |   |   |--- capital_run_length_average <= 5.38
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- capital_run_length_average >  5.38
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- word_freq_free >  0.14
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- word_freq_3d >  0.64
+|   |   |   |   |   |   |--- class: 1
+|   |   |--- char_freq_! >  0.39
+|   |   |   |--- capital_run_length_total <= 62.50
+|   |   |   |   |--- word_freq_addresses <= 1.01
+|   |   |   |   |   |--- capital_run_length_average <= 2.74
+|   |   |   |   |   |   |--- word_freq_free <= 0.39
+|   |   |   |   |   |   |   |--- word_freq_mail <= 0.90
+|   |   |   |   |   |   |   |   |--- char_freq_! <= 4.13
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- char_freq_! >  4.13
+|   |   |   |   |   |   |   |   |   |--- word_freq_project <= 0.34
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- word_freq_project >  0.34
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- word_freq_mail >  0.90
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- word_freq_free >  0.39
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- capital_run_length_average >  2.74
+|   |   |   |   |   |   |--- capital_run_length_total <= 26.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- capital_run_length_total >  26.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- word_freq_addresses >  1.01
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- capital_run_length_total >  62.50
+|   |   |   |   |--- word_freq_parts <= 0.06
+|   |   |   |   |   |--- word_freq_re <= 0.17
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- word_freq_re >  0.17
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- word_freq_parts >  0.06
+|   |   |   |   |   |--- class: 0
+|   |--- word_freq_over >  0.06
+|   |   |--- word_freq_hpl <= 0.14
+|   |   |   |--- word_freq_re <= 0.12
+|   |   |   |   |--- class: 1
+|   |   |   |--- word_freq_re >  0.12
+|   |   |   |   |--- class: 0
+|   |   |--- word_freq_hpl >  0.14
+|   |   |   |--- class: 0
+|--- char_freq_$ >  0.03
+|   |--- word_freq_money <= 0.38
+|   |   |--- word_freq_re <= 0.17
+|   |   |   |--- word_freq_cs <= 0.12
+|   |   |   |   |--- word_freq_hpl <= 0.21
+|   |   |   |   |   |--- char_freq_; <= 0.43
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- char_freq_; >  0.43
+|   |   |   |   |   |   |--- char_freq_! <= 0.05
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- char_freq_! >  0.05
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- word_freq_hpl >  0.21
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- word_freq_cs >  0.12
+|   |   |   |   |--- class: 0
+|   |   |--- word_freq_re >  0.17
+|   |   |   |--- word_freq_85 <= 0.21
+|   |   |   |   |--- class: 0
+|   |   |   |--- word_freq_85 >  0.21
+|   |   |   |   |--- class: 1
+|   |--- word_freq_money >  0.38
+|   |   |--- word_freq_over <= 0.08
+|   |   |   |--- class: 0
+|   |   |--- word_freq_over >  0.08
+|   |   |   |--- class: 1
