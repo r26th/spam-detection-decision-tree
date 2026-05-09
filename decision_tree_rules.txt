@@ -1,49 +1,68 @@
-|--- char_freq_$ <= 0.03
-|   |--- word_freq_remove <= 0.06
-|   |   |--- char_freq_! <= 0.39
-|   |   |   |--- word_freq_free <= 0.02
-|   |   |   |   |--- word_freq_credit <= 0.42
-|   |   |   |   |   |--- class: 0
-|   |   |   |   |--- word_freq_credit >  0.42
-|   |   |   |   |   |--- class: 1
-|   |   |   |--- word_freq_free >  0.02
-|   |   |   |   |--- word_freq_your <= 1.28
-|   |   |   |   |   |--- class: 0
-|   |   |   |   |--- word_freq_your >  1.28
-|   |   |   |   |   |--- class: 1
-|   |   |--- char_freq_! >  0.39
-|   |   |   |--- capital_run_length_total <= 62.50
-|   |   |   |   |--- word_freq_free <= 1.01
-|   |   |   |   |   |--- class: 0
-|   |   |   |   |--- word_freq_free >  1.01
-|   |   |   |   |   |--- class: 1
-|   |   |   |--- capital_run_length_total >  62.50
-|   |   |   |   |--- word_freq_pm <= 0.06
-|   |   |   |   |   |--- class: 1
-|   |   |   |   |--- word_freq_pm >  0.06
-|   |   |   |   |   |--- class: 0
-|   |--- word_freq_remove >  0.06
-|   |   |--- word_freq_george <= 0.14
-|   |   |   |--- word_freq_edu <= 0.12
-|   |   |   |   |--- class: 1
-|   |   |   |--- word_freq_edu >  0.12
-|   |   |   |   |--- class: 0
-|   |   |--- word_freq_george >  0.14
-|   |   |   |--- class: 0
-|--- char_freq_$ >  0.03
-|   |--- word_freq_hp <= 0.38
-|   |   |--- word_freq_edu <= 0.17
-|   |   |   |--- word_freq_meeting <= 0.12
-|   |   |   |   |--- word_freq_george <= 0.21
-|   |   |   |   |   |--- class: 1
-|   |   |   |   |--- word_freq_george >  0.21
-|   |   |   |   |   |--- class: 0
-|   |   |   |--- word_freq_meeting >  0.12
-|   |   |   |   |--- class: 0
-|   |   |--- word_freq_edu >  0.17
-|   |   |   |--- class: 0
-|   |--- word_freq_hp >  0.38
-|   |   |--- word_freq_remove <= 0.08
-|   |   |   |--- class: 0
-|   |   |--- word_freq_remove >  0.08
-|   |   |   |--- class: 1
+Rule 1:
+IF char_freq_$ <= 0.03 AND word_freq_remove <= 0.06 AND char_freq_! <= 0.39 AND word_freq_free <= 0.02 AND word_freq_credit <= 0.42
+THEN Class = Not Spam (0)
+
+Rule 2:
+IF char_freq_$ <= 0.03 AND word_freq_remove <= 0.06 AND char_freq_! <= 0.39 AND word_freq_free <= 0.02 AND word_freq_credit > 0.42
+THEN Class = Spam (1)
+
+Rule 3:
+IF char_freq_$ <= 0.03 AND word_freq_remove <= 0.06 AND char_freq_! <= 0.39 AND word_freq_free > 0.02 AND word_freq_your <= 1.28
+THEN Class = Not Spam (0)
+
+Rule 4:
+IF char_freq_$ <= 0.03 AND word_freq_remove <= 0.06 AND char_freq_! <= 0.39 AND word_freq_free > 0.02 AND word_freq_your > 1.28
+THEN Class = Spam (1)
+
+Rule 5:
+IF char_freq_$ <= 0.03 AND word_freq_remove <= 0.06 AND char_freq_! > 0.39 AND capital_run_length_total <= 62.50 AND word_freq_free <= 1.01
+THEN Class = Not Spam (0)
+
+Rule 6:
+IF char_freq_$ <= 0.03 AND word_freq_remove <= 0.06 AND char_freq_! > 0.39 AND capital_run_length_total <= 62.50 AND word_freq_free > 1.01
+THEN Class = Spam (1)
+
+Rule 7:
+IF char_freq_$ <= 0.03 AND word_freq_remove <= 0.06 AND char_freq_! > 0.39 AND capital_run_length_total > 62.50 AND word_freq_pm <= 0.06
+THEN Class = Spam (1)
+
+Rule 8:
+IF char_freq_$ <= 0.03 AND word_freq_remove <= 0.06 AND char_freq_! > 0.39 AND capital_run_length_total > 62.50 AND word_freq_pm > 0.06
+THEN Class = Not Spam (0)
+
+Rule 9:
+IF char_freq_$ <= 0.03 AND word_freq_remove > 0.06 AND word_freq_george <= 0.14 AND word_freq_edu <= 0.12
+THEN Class = Spam (1)
+
+Rule 10:
+IF char_freq_$ <= 0.03 AND word_freq_remove > 0.06 AND word_freq_george <= 0.14 AND word_freq_edu > 0.12
+THEN Class = Not Spam (0)
+
+Rule 11:
+IF char_freq_$ <= 0.03 AND word_freq_remove > 0.06 AND word_freq_george > 0.14
+THEN Class = Not Spam (0)
+
+Rule 12:
+IF char_freq_$ > 0.03 AND word_freq_hp <= 0.38 AND word_freq_edu <= 0.17 AND word_freq_meeting <= 0.12 AND word_freq_george <= 0.21
+THEN Class = Spam (1)
+
+Rule 13:
+IF char_freq_$ > 0.03 AND word_freq_hp <= 0.38 AND word_freq_edu <= 0.17 AND word_freq_meeting <= 0.12 AND word_freq_george > 0.21
+THEN Class = Not Spam (0)
+
+Rule 14:
+IF char_freq_$ > 0.03 AND word_freq_hp <= 0.38 AND word_freq_edu <= 0.17 AND word_freq_meeting > 0.12
+THEN Class = Not Spam (0)
+
+Rule 15:
+IF char_freq_$ > 0.03 AND word_freq_hp <= 0.38 AND word_freq_edu > 0.17
+THEN Class = Not Spam (0)
+
+Rule 16:
+IF char_freq_$ > 0.03 AND word_freq_hp > 0.38 AND word_freq_remove <= 0.08
+THEN Class = Not Spam (0)
+
+Rule 17:
+IF char_freq_$ > 0.03 AND word_freq_hp > 0.38 AND word_freq_remove > 0.08
+THEN Class = Spam (1)
+
